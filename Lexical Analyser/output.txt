@@ -1,0 +1,130 @@
+#include<stdio.h> 	---- PREPROCESSOR
+#define hundred 100 	---- PREPROCESSOR
+int 	---- KEYWORD
+main 	---- IDENTIFIER
+( 	----OPEN PARENTHESIS
+int 	---- KEYWORD
+a 	---- IDENTIFIER
+) 	---- CLOSE PARENTHESIS
+{ 	---- OPEN PARENTHESIS
+int 	---- KEYWORD
+n 	---- IDENTIFIER
+= 	---- ARITHMETIC OPERATOR
+10fgh 	---- ERROR: ILL-FORMED IDENTIFIER
+; 	---- SEMICOLON DELIMITER
+n 	---- IDENTIFIER
+= 	---- ARITHMETIC OPERATOR
+1 	---- INTEGER LITERAL
+; 	---- SEMICOLON DELIMITER
+//with errors 	---- SINGLE LINE COMMENT
+scanf 	---- IDENTIFIER
+( 	----OPEN PARENTHESIS
+"%d" 	---- STRING LITERAL
+, 	---- COMMA DELIMITER
+& 	---- BITWISE OPERATOR
+ch 	---- IDENTIFIER
+) 	---- CLOSE PARENTHESIS
+; 	---- SEMICOLON DELIMITER
+int 	---- KEYWORD
+arr 	---- IDENTIFIER
+[ 	---- OPEN PARENTHESIS
+10 	---- INTEGER LITERAL
+] 	---- CLOSE PARENTHESIS
+[ 	---- OPEN PARENTHESIS
+10 	---- INTEGER LITERAL
+; 	---- SEMICOLON DELIMITER
+arr 	---- IDENTIFIER
+[ 	---- OPEN PARENTHESIS
+0 	---- INTEGER LITERAL
+] 	---- CLOSE PARENTHESIS
+[ 	---- OPEN PARENTHESIS
+0 	---- INTEGER LITERAL
+] 	---- CLOSE PARENTHESIS
+= 	---- ARITHMETIC OPERATOR
+0 	---- INTEGER LITERAL
+; 	---- SEMICOLON DELIMITER
+for 	---- KEYWORD
+( 	----OPEN PARENTHESIS
+i 	---- IDENTIFIER
+= 	---- ARITHMETIC OPERATOR
+0 	---- INTEGER LITERAL
+; 	---- SEMICOLON DELIMITER
+i 	---- IDENTIFIER
+< 	---- COMPARISON OPERATOR
+n 	---- IDENTIFIER
+; 	---- SEMICOLON DELIMITER
+i 	---- IDENTIFIER
+++ 	---- ARITHMETIC OPERATOR
+) 	---- CLOSE PARENTHESIS
+for 	---- KEYWORD
+( 	----OPEN PARENTHESIS
+j 	---- IDENTIFIER
+= 	---- ARITHMETIC OPERATOR
+0 	---- INTEGER LITERAL
+; 	---- SEMICOLON DELIMITER
+j 	---- IDENTIFIER
+< 	---- COMPARISON OPERATOR
+n 	---- IDENTIFIER
+; 	---- SEMICOLON DELIMITER
+j 	---- IDENTIFIER
+++ 	---- ARITHMETIC OPERATOR
+) 	---- CLOSE PARENTHESIS
+{ 	---- OPEN PARENTHESIS
+a 	---- IDENTIFIER
+[ 	---- OPEN PARENTHESIS
+i 	---- IDENTIFIER
+] 	---- CLOSE PARENTHESIS
+[ 	---- OPEN PARENTHESIS
+j 	---- IDENTIFIER
+] 	---- CLOSE PARENTHESIS
+= 	---- ARITHMETIC OPERATOR
+i 	---- IDENTIFIER
++j 	---- ERROR: ILL-FORMED IDENTIFIER
+; 	---- SEMICOLON DELIMITER
+printf 	---- IDENTIFIER
+( 	----OPEN PARENTHESIS
+"%d\t" 	---- STRING LITERAL
+, 	---- COMMA DELIMITER
+a 	---- IDENTIFIER
+[ 	---- OPEN PARENTHESIS
+i 	---- IDENTIFIER
+] 	---- CLOSE PARENTHESIS
+[ 	---- OPEN PARENTHESIS
+j 	---- IDENTIFIER
+] 	---- CLOSE PARENTHESIS
+) 	---- CLOSE PARENTHESIS
+} 	---- CLOSE PARENTHESIS
+else 	---- KEYWORD
+printf 	---- IDENTIFIER
+( 	----OPEN PARENTHESIS
+"Okay!\n" 	---- STRING LITERAL
+) 	---- CLOSE PARENTHESIS
+; 	---- SEMICOLON DELIMITER
+} 	---- CLOSE PARENTHESIS
+ERROR: UNMATCHED PARENTHESIS AT LINE NUMBER: 16
+} 	---- CLOSE PARENTHESIS
+
+
+----------------------------------------------------------------------------
+				SYMBOL TABLE
+----------------------------------------------------------------------------
+	Lexeme 						Token
+----------------------------------------------------------------------------
+              a 	                               IDENTIFIER
+              i 	                               IDENTIFIER
+              j 	                               IDENTIFIER
+              n 	                               IDENTIFIER
+          scanf 	                               IDENTIFIER
+            for 	                                  KEYWORD
+             ch 	                               IDENTIFIER
+      "Okay!\n" 	                           STRING LITERAL
+            int 	                                  KEYWORD
+         "%d\t" 	                           STRING LITERAL
+           "%d" 	                           STRING LITERAL
+           main 	                               IDENTIFIER
+            arr 	                               IDENTIFIER
+           else 	                                  KEYWORD
+         printf 	                               IDENTIFIER
+             10 	                          INTEGER LITERAL
+              0 	                          INTEGER LITERAL
+              1 	                          INTEGER LITERAL
